@@ -106,6 +106,82 @@ def func(a,b):
 print(func(2323,3333))
 
 ##
+def fun(a,b,c,d,e):
+    return a,b,c,d,e
+print(fun(1,2,3,4,5))
 
+##Find a lenth of a string without using len() / Take a string as input and return length
+
+def length(a):
+    print("type of a : ", type(a))
+    if type(a) == str :
+       print("length of a string :" , len(a))
+length("string")
+
+def length(str):
+    count=0
+    for i in str:
+        count=count+1
+    return count
+print(length('string'))
+
+## find the index of elements
+
+def find_index(str):
+     for i in str:
+         a = []
+         a=str.index(i)
+         print("value :", i,"of index :",a)
+find_index("string")
+
+## Take input as dict and op as list
+def dic_to_list(dic):
+    if type(dic) == dict:
+
+## Take function as input and returns output
+
+def upper(str):
+    return str.upper()
+def lower(str):
+    return str.lower()
+def casechange(func):
+    message=func("text goes here")
+    print(message)
+casechange(upper)
+casechange(lower)
+
+## take list as argument
+
+def test(food):
+    for i in food:
+        print(i)
+#food=["apple","orange","Banana"]
+test(["apple","orange","Banana"])
+
+# function that takes list and print index details
+def test(food):
+    for i in food:
+
+        print("Idex of ", i, " is : ", food.index(i))
+#food=["apple","orange","Banana"]
+test(["apple","orange","Banana"])
+
+## lIST ALL file names in a directory
+
+import platform
+print(platform.node()) # get computer name
+print(platform.platform()) # computer platform details
+print(platform.processor())
+print(platform.python_version())
+print(platform.uname())
+
+## print date and time python function
+from datetime import datetime
+# datetime object containing current date and time
+DateTime = datetime.now()
+print("now =", DateTime)
+# dd/mm/YY H:M:S
+dt_string = DateTime.strftime("%d/%m/%Y %H:%M:%S")
+print("date and time =", dt_string)
 
 
